@@ -14,7 +14,7 @@
     "socket.io-client": "^4.0.1",
     "web-vitals": "^1.1.1"
   },
-  "homepage": "https://khushwant-hg.github.com/chat-box",
+  "homepage": "https://palakbajaj44.github.com/PatientChat",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
