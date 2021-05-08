@@ -89,8 +89,8 @@ const App=()=>{
 
       let time = day;
           time = time.toLocaleTimeString().split(":");
-          let d1 = time[2].split(" ")[1];
-          time = time[0] + ":" + time[1] + " " + d1;
+          // let d1 = time[2].split(" ")[1];
+          time = time[0] + ":" + time[1];
       setUsers(prevState=>{
         let k=prevState.slice();
         let i;
@@ -158,8 +158,8 @@ const App=()=>{
     let day = new Date();
     let time = day;
         time = time.toLocaleTimeString().split(":");
-        let d1 = time[2].split(" ")[1];
-        time = time[0] + ":" + time[1] + " " + d1;
+        // let d1 = time[2].split(" ")[1];
+        time = time[0] + ":" + time[1];
     soc.emit('private-message',mes,Activeuser.name);
     setUsers(prevState=>{
       let k=prevState.slice();
