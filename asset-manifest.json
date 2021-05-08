@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/PatientChat/static/css/main.dde0f428.chunk.css",
-    "main.js": "/PatientChat/static/js/main.fde36b80.chunk.js",
-    "main.js.map": "/PatientChat/static/js/main.fde36b80.chunk.js.map",
+    "main.js": "/PatientChat/static/js/main.edd5feb2.chunk.js",
+    "main.js.map": "/PatientChat/static/js/main.edd5feb2.chunk.js.map",
     "runtime-main.js": "/PatientChat/static/js/runtime-main.80138a86.js",
     "runtime-main.js.map": "/PatientChat/static/js/runtime-main.80138a86.js.map",
     "static/js/2.fa0ec616.chunk.js": "/PatientChat/static/js/2.fa0ec616.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.80138a86.js",
     "static/js/2.fa0ec616.chunk.js",
     "static/css/main.dde0f428.chunk.css",
-    "static/js/main.fde36b80.chunk.js"
+    "static/js/main.edd5feb2.chunk.js"
   ]
 }
