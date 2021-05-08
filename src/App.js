@@ -85,6 +85,9 @@ const App=()=>{
 
     //recevice user message.
     soc.on('private-message',(dat,from)=>{
+      let day = new Date();
+        day = day.toDateString().split(" ");
+        day = day[1] + " " + day[2];
       setUsers(prevState=>{
         let k=prevState.slice();
         let i;
@@ -94,7 +97,7 @@ const App=()=>{
           }
         }
         let p=k[i].message;
-        p.push({mes:dat,ismine:false});
+        p.push({mes:dat,ti:day,ismine:false});
         k[i].message=p;
         return k;
       });
@@ -149,11 +152,14 @@ const App=()=>{
     e.preventDefault();
     let mes=e.target.mes.value;
     console.log(mes);
+    let day = new Date();
+        day = day.toDateString().split(" ");
+        day = day[1] + " " + day[2];
     soc.emit('private-message',mes,Activeuser.name);
     setUsers(prevState=>{
       let k=prevState.slice();
       let p=k[Activeuser.index].message.slice();
-      p.push({mes:mes,ismine:true});
+      p.push({mes:mes,ti:day,ismine:true});
       k[Activeuser.index].message=p;
       return k;
     })
@@ -185,7 +191,7 @@ const App=()=>{
         <div ref={last?lastmessageref:null} className={dat.ismine?"Message--main": "Message--oth"}>
                   <div className="Message--main--content">
                       {dat.mes}</div>
-                  <div className="Message--main--time">12:00 pm</div>
+                  <div className="Message--main--time">{dat.ti}</div>
             </div>
       )
     })
