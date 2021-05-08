@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/PatientChat/static/css/main.dde0f428.chunk.css",
-    "main.js": "/PatientChat/static/js/main.a64a6d19.chunk.js",
-    "main.js.map": "/PatientChat/static/js/main.a64a6d19.chunk.js.map",
+    "main.js": "/PatientChat/static/js/main.b2243f82.chunk.js",
+    "main.js.map": "/PatientChat/static/js/main.b2243f82.chunk.js.map",
     "runtime-main.js": "/PatientChat/static/js/runtime-main.80138a86.js",
     "runtime-main.js.map": "/PatientChat/static/js/runtime-main.80138a86.js.map",
-    "static/js/2.cb5668b1.chunk.js": "/PatientChat/static/js/2.cb5668b1.chunk.js",
-    "static/js/2.cb5668b1.chunk.js.map": "/PatientChat/static/js/2.cb5668b1.chunk.js.map",
+    "static/js/2.fa0ec616.chunk.js": "/PatientChat/static/js/2.fa0ec616.chunk.js",
+    "static/js/2.fa0ec616.chunk.js.map": "/PatientChat/static/js/2.fa0ec616.chunk.js.map",
     "static/js/3.fcce7168.chunk.js": "/PatientChat/static/js/3.fcce7168.chunk.js",
     "static/js/3.fcce7168.chunk.js.map": "/PatientChat/static/js/3.fcce7168.chunk.js.map",
     "index.html": "/PatientChat/index.html",
     "static/css/main.dde0f428.chunk.css.map": "/PatientChat/static/css/main.dde0f428.chunk.css.map",
-    "static/js/2.cb5668b1.chunk.js.LICENSE.txt": "/PatientChat/static/js/2.cb5668b1.chunk.js.LICENSE.txt"
+    "static/js/2.fa0ec616.chunk.js.LICENSE.txt": "/PatientChat/static/js/2.fa0ec616.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.80138a86.js",
-    "static/js/2.cb5668b1.chunk.js",
+    "static/js/2.fa0ec616.chunk.js",
     "static/css/main.dde0f428.chunk.css",
-    "static/js/main.a64a6d19.chunk.js"
+    "static/js/main.b2243f82.chunk.js"
   ]
 }
