@@ -86,8 +86,11 @@ const App=()=>{
     //recevice user message.
     soc.on('private-message',(dat,from)=>{
       let day = new Date();
-        day = day.toDateString().split(" ");
-        day = day[1] + " " + day[2];
+
+      let time = day;
+          time = time.toLocaleTimeString().split(":");
+          let d1 = time[2].split(" ")[1];
+          time = time[0] + ":" + time[1] + " " + d1;
       setUsers(prevState=>{
         let k=prevState.slice();
         let i;
@@ -97,7 +100,7 @@ const App=()=>{
           }
         }
         let p=k[i].message;
-        p.push({mes:dat,ti:day,ismine:false});
+        p.push({mes:dat,ti:time,ismine:false});
         k[i].message=p;
         return k;
       });
@@ -153,13 +156,15 @@ const App=()=>{
     let mes=e.target.mes.value;
     console.log(mes);
     let day = new Date();
-        day = day.toDateString().split(" ");
-        day = day[1] + " " + day[2];
+    let time = day;
+        time = time.toLocaleTimeString().split(":");
+        let d1 = time[2].split(" ")[1];
+        time = time[0] + ":" + time[1] + " " + d1;
     soc.emit('private-message',mes,Activeuser.name);
     setUsers(prevState=>{
       let k=prevState.slice();
       let p=k[Activeuser.index].message.slice();
-      p.push({mes:mes,ti:day,ismine:true});
+      p.push({mes:mes,ti:time,ismine:true});
       k[Activeuser.index].message=p;
       return k;
     })
